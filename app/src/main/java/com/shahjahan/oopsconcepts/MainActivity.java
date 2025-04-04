@@ -58,33 +58,31 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        //seter
         Employee employee = new Employee();
-        employee.salary="12000";
-        employee.name= "sadik";
-        employee.father="jahangir";
+        employee.setName("Sadik");
+        employee.setPosition("CEO");
+        employee.setSalary("100000");
 
 
+        //Geter
+        text_view.append("\n"+employee.getName());
+        text_view.append("\n"+employee.getPosition());
+        text_view.append("\n"+employee.getSalary());
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        //seter
         Employee employee2 = new Employee();
-        employee2.salary="124000";
-        employee2.name= "Shahjahan";
-        employee2.father="Akbar";
+        employee2.setName("Sadik2");
+        employee2.setPosition("CEO2");
+        employee2.setSalary("1000002");
 
 
-
-
-
-
-        text_view.append("\n"+employee2.salary);
-        text_view.append("\n"+employee2.name);
-        text_view.append("\n"+employee2.father);
-
-        text_view.append("\n\n"+employee.salary);
-        text_view.append("\n"+employee.name);
-        text_view.append("\n"+employee.father);
-
-
-
-
+        //Geter
+        text_view.append("\n\n"+employee2.getName());
+        text_view.append("\n"+employee2.getPosition());
+        text_view.append("\n"+employee2.getSalary());
 
 
 
