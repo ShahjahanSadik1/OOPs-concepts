@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //seter
-        Employee employee = new Employee("SADIK","CEO","120000");
+        //Constructo
+        Employee employee = new Employee("SADIK","CEO",120000);
 
 
 
@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-        //seter
-        Employee employee2 = new Employee("SHAHJAHAN","SELMAN","13000");
+        //Constructo two
+        Employee employee2 = new Employee("SHAHJAHAN","SELMAN",1000,1);
 
 
 

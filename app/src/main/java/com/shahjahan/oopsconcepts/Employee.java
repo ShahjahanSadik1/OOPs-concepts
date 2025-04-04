@@ -3,13 +3,14 @@ package com.shahjahan.oopsconcepts;
 public class Employee {
    private String name;
    private String position;
-   private String salary;
+   private float salary;
 
-//3005 class
+
+//3006 class
 
 
    //Constructor making
-   public Employee(String emp_name,String emp_position,String emp_salary){
+   public Employee(String emp_name,String emp_position,float emp_salary){
 
         this.name=emp_name;
         this.position=emp_position;
@@ -18,6 +19,15 @@ public class Employee {
    }
 
 
+    //two Constructor making
+    public Employee(String emp_name,String emp_position,float emp_salary,float emp_apsent){
+
+        this.name=emp_name;
+        this.position=emp_position;
+        this.salary=emp_salary-(emp_apsent*500);
+
+
+    }
 
 
    //no geter
@@ -35,7 +45,7 @@ public class Employee {
         return position;
     }
 
-    public String getSalary() {
+    public float getSalary() {
         return salary;
     }
 }
