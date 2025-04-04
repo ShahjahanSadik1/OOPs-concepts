@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView())
-                .setAppearanceLightStatusBars(true);
+                .setAppearanceLightStatusBars(false);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             getWindow().setNavigationBarContrastEnforced(false);
@@ -59,10 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         //seter
-        Employee employee = new Employee();
-        employee.setName("Sadik");
-        employee.setPosition("CEO");
-        employee.setSalary("100000");
+        Employee employee = new Employee("SADIK","CEO","120000");
+
 
 
         //Geter
@@ -73,10 +71,8 @@ public class MainActivity extends AppCompatActivity {
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         //seter
-        Employee employee2 = new Employee();
-        employee2.setName("Sadik2");
-        employee2.setPosition("CEO2");
-        employee2.setSalary("1000002");
+        Employee employee2 = new Employee("SHAHJAHAN","SELMAN","13000");
+
 
 
         //Geter
